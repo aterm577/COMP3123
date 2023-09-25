@@ -30,7 +30,7 @@ const server = http.createServer((req, res) => {
             //TODO - Display only all employees {first name + lastname} in Ascending order in JSON Array
             //e.g. [ "Ash Lee", "Mac Mohan", "Pritesh Patel"]
             const employeeNames = [];
-        for (const employee of employees) {
+            for (const employee of employees) {
             const fullName = `${employee.firstName} ${employee.lastName}`;
             employeeNames.push(fullName);
         }
